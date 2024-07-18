@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 5,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+:root {
+    --color-fondo: #F3F5FC;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-inter);
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.cont-left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: var(--color-fondo);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 240px;
+}
+
+
+.text-area {
+    font-size: 32px;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color: #3F464D;
+    background-color: var(--color-fondo);
+    width: 680px;
+    height: 400px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.alert-text {
+    font-size: 12px;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color: #495057;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.encrypt-btn {
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    border: solid 1px #0A3871;
+    border-radius: 24px;
+    box-shadow: 0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    width: 45%;
+}
+
+.encrypt-btn:hover {
+    color: #0A3871;
+    background-color: #ffffff;
+    border: solid 1px #0A3871;
+    box-shadow: 0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.decrypt-btn {
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: solid 1px #0A3871;
+    border-radius: 24px;
+    box-shadow: 0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    width: 45%;
+}
+
+.decrypt-btn:hover {
+    color: #0A3871;
+    background-color: #ffffff;
+    border: solid 1px #0A3871;
+    box-shadow: 0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.cont-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-right-child {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 32px;
+    box-shadow:
+        8px 0 30px -8px rgba(0, 0, 0, 0.04),
+        0 30px 40px -8px rgba(0, 0, 0, 0.08),
+        0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.img-right {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 336px;
+    height: 304px;
+    padding-bottom: 20px;
+}
+
+.cont-right-child-content-start {
+    text-align: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cont-right-child-title {
+    font-size: 24px;
+    font-family: var(--fuente-inter);
+    font-weight: 600;
+    color: #343A40;
+}
+
+.cont-right-child-text {
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    font-weight: 100;
+    color: #495057;
+}
+
+.cont-right-child-content-end {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-area-right {
+    font-size: 26px;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color: #3F464D;
+    background-color: #ffffff;
+    width: 336px;
+    height: 400px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.copy-btn {
+    font-size: 24px;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color: #0A3871;
+    background-color: #ffffff;
+    border: solid 1px #0A3871;
+    border-radius: 22px;
+    box-shadow: 0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    width: 100%;
+}
+
+.copy-btn:hover {
+    color: #ffffff;
+    background-color: #0A3871;
+    border: solid 1px #ffffff;
+    box-shadow: 0 32px 15px -8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #0A3871;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    font-weight: 600;
+    margin-top: 15px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cont-left {
+        width: 90%;
+        padding-left: 0px;
+    }
+
+    form {
+        padding-top: 116px;
+        width: 100%;
+    }
+
+    .text-area {
+        width: 100%;
+        text-align: left;
+    }
+
+    .buttons {
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 64px;
+
+    }
+
+    .cont-right {
+        width: 100%;
+    }
+
+    .cont-right-child {
+        width: 90%;
+    }
+
+    .img-right {
+        display: none;
+
+    }
+
+    .cont-right-child {
+        margin-bottom: 50px;
+    }
+
+    .cont-right-child-content-end {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text-area-right {
+        width: 90%;
+    }
+
+    .copy-btn {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .encrypt-btn {
+        width: 90%;
+    }
+
+    .decrypt-btn {
+        width: 90%;
+    }
+}
