@@ -22,7 +22,7 @@
 
             <form class="form">
 
-                <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea id="text-area" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
 
                 <div class="alert">
                     <span class="material-symbols-outlined">error</span>
@@ -30,8 +30,8 @@
                 </div>
 
                 <div class="buttons">
-                    <button type="button" class="encrypt-btn">Encriptar</button>
-                    <button type="button" class="decrypt-btn">Desencriptar</button>
+                    <button onclick="encrypt()" type="button" class="encrypt-btn">Encriptar</button>
+                    <button onclick="decrypt()" type="button" class="decrypt-btn">Desencriptar</button>
                 </div>
 
             </form>
@@ -41,18 +41,18 @@
         <section class="cont-right">
 
             <article class="cont-right-child">
-
-                <div class="cont-right-child-content-start">
+            
+                <div id="cont-right-child-content-start" class="cont-right-child-content-start">
                     <img class="img-right" src="./assets/Muñeco.png" alt="No encontrado">
                     <h2 class="cont-right-child-content-title">Ningún mensaje fue encontrado</h2>
                     <p class="cont-right-child-content-text">Ingresa el texto que desees encriptar o desencriptar</p>
                 </div>
-                <!--
-                <div class="cont-right-child-content-end">
-                    <textarea disabled class="text-area-right" name="" id="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</textarea>
+                
+                <div style="display: none;"  id="cont-right-child-content-end" class="cont-right-child-content-end">
+                    <textarea id="text-area-right" disabled class="text-area-right" name=""></textarea>
                     <button class="copy-btn">Copiar</button>
                 </div>
-                -->
+                
             </article>
 
         </section>
@@ -62,7 +62,7 @@
         <p>Desarrollado por Luis Eduardo Dizu Mendez</p>
     </footer>
 
-    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

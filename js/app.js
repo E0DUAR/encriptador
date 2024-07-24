@@ -1,7 +1,10 @@
 function encrypt() {
-    let text = document.getElementById('text-area').value; 
+    let text = document.getElementById('text-area').value;
     console.log(`Texto inicial: ${text}`);
-    
+
+    document.getElementById('cont-right-child-content-start').style.display = 'none';
+    document.getElementById('cont-right-child-content-end').style.display = 'block';
+
     let encryptedText = text.replace(/a/g, 'ai')
                             .replace(/e/g, 'enter')
                             .replace(/i/g, 'imes')
@@ -9,17 +12,22 @@ function encrypt() {
                             .replace(/u/g, 'ufat');
 
     console.log(`Texto encriptado: ${encryptedText}`);
+
+    document.getElementById('text-area-right').value = encryptedText;
 }
 
 function decrypt() {
-    let text = document.getElementById('text-area').value;
-    console.log(`Texto encriptado: ${text}`);
+    let encryptedText = document.getElementById('text-area-right').value;
 
-    let decryptedText = text.replace(/ufat/g, 'u')
+    console.log(`Texto encriptado: ${encryptedText}`);
+
+    let decryptedText = encryptedText.replace(/ufat/g, 'u')
                             .replace(/ober/g, 'o')
                             .replace(/imes/g, 'i')
                             .replace(/enter/g, 'e')
                             .replace(/ai/g, 'a');
 
     console.log(`Texto desencriptado: ${decryptedText}`);
+    
+    document.getElementById('text-area-right').value = decryptedText;
 }

@@ -138,6 +138,11 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
+
 .cont-right {
     width: 40%;
     display: flex;
@@ -301,6 +306,7 @@ footer {
     }
 
     .cont-right-child-content-end {
+        
         justify-content: center;
         align-items: center;
         width: 100%;
