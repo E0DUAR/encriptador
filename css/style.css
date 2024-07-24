@@ -30,6 +30,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding-top: 30px;
+    cursor: pointer;
 }
 
 .container {
@@ -255,6 +256,27 @@ footer {
     margin-top: 15px;
     width: 100%;
 }
+
+footer {
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #FFFFFF; /* Color del ícono */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+.social-media a:hover {
+    color: #0073b1; /* Color del ícono al pasar el ratón, puedes cambiarlo según el color de tu diseño */
+}
+
+
 
 @media (max-width: 1200px) {
 

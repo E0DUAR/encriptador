@@ -87,6 +87,21 @@ function copyText() {
 }
 
 
+function handleHeaderClick() {
+
+  document.getElementById('text-area').value = '';
+  document.getElementById('text-area-right').value = '';
+
+  const rightContentStart = document.getElementById('cont-right-child-content-start');
+  const rightContentEnd = document.getElementById('cont-right-child-content-end');
+
+  showDiv(rightContentStart);
+  hideDiv(rightContentEnd);
+}
+document.getElementById('header').addEventListener('click', handleHeaderClick);
+
+
+
 
 function hideDiv(element) {
   element.style.display = "none";
