@@ -337,4 +337,14 @@ footer {
     .decrypt-btn {
         width: 90%;
     }
+
+    .cont-right-child-content-end {
+
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 30px;
+    }
+
+
 }
