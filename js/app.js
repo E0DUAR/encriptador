@@ -38,6 +38,10 @@ function encrypt() {
 
 
 function decrypt() {
+  
+  const rightContentStart = document.getElementById("cont-right-child-content-start");
+  const rightContentEnd = document.getElementById("cont-right-child-content-end");
+
   const textArea = document.getElementById("text-area");
   const textAreaRight = document.getElementById("text-area-right"); 
   const encryptedText = textArea.value || textAreaRight.value; // Usar el texto del textarea izquierdo o derecho
@@ -62,18 +66,17 @@ function decrypt() {
 
   console.log(`Texto desencriptado: ${decryptedText}`);
   textAreaRight.value = decryptedText;
+
+  showDiv(rightContentEnd);
+  hideDiv(rightContentStart); 
 }
 
 
 
 function copyText() {
   const textAreaRight = document.getElementById("text-area-right");
-  const rightContentStart = document.getElementById(
-    "cont-right-child-content-start"
-  );
-  const rightContentEnd = document.getElementById(
-    "cont-right-child-content-end"
-  );
+  const rightContentStart = document.getElementById("cont-right-child-content-start");
+  const rightContentEnd = document.getElementById("cont-right-child-content-end");
 
   textAreaRight.disabled = false;
   textAreaRight.select();
